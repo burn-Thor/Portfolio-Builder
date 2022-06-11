@@ -41,7 +41,7 @@
             ctx.fillRect(x * pixelSize, y * pixelSize, pixelSize, pixelSize);
         }
 
-    // color function with gradient defined going through re, orange, yellow and black, using chroma for ease
+    // color function with gradient defined going through site's colour scheme, using chroma for ease
         let gradient = chroma.scale(['#BDEFBF', '#BDEFBF', '#43BCCD', '#9F9493', '#533A71']).domain([0, 10, 15, 30, 100]);
         function color(color){
             return gradient(color * 100.0 / 255).toString();
